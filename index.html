@@ -178,7 +178,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
+          <a href="/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -188,7 +188,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
+          <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -313,126 +313,8 @@
 <li><strong>在机器上有git并且与github配置好后，安装过程中使用到的命令</strong><br>按顺序依次是：<br>安装hexo<code>npm install -g hexo</code><br><code>mkdir ~/hexo</code>，进入<code>~/hexo</code>初始化hexo<code>hexo init</code><br>安装Next主题<code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code><br>验证是否成功，本地<code>hexo g</code>+<code>hexo s</code>,验证成功后上传github<code>hexo d</code></li>
 </ul>
 <h2 id="hexo下markdown标题不显示"><a href="#hexo下markdown标题不显示" class="headerlink" title="hexo下markdown标题不显示"></a>hexo下markdown标题不显示</h2><p>  一般是因为使用时的语法不严格，比如错误事例为<code>##标题</code>。正确语法是<code>## 标题</code>。（有点坑）</p>
+<h2 id="使用Next的主题时，URL末尾会带有-20"><a href="#使用Next的主题时，URL末尾会带有-20" class="headerlink" title="使用Next的主题时，URL末尾会带有%20"></a>使用Next的主题时，URL末尾会带有%20</h2><p>  %20是空格，需要修改 <code>your_hexo/themes/next/_config.yml</code>文件的第95行<br>  <code>home: / || home</code>  改为<code>home: /|| home</code><br>  <code>archives: / || archives</code> 改为 <code>archives: /|| archives</code>（真坑）</p>
 
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/17/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/17/test/" itemprop="url">test</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-17T22:56:22+08:00">
-                2019-12-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
           
         
       
@@ -643,9 +525,9 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/%20%7C%7C%20archive">
+                <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -653,6 +535,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
             
 
           </nav>
