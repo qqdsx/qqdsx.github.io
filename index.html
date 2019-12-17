@@ -229,6 +229,138 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/17/my-first-blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/17/my-first-blog/" itemprop="url">my-first-blog</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-17T21:54:17+08:00">
+                2019-12-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="hexo-amp-next主题安装过程中遇到的问题"><a href="#hexo-amp-next主题安装过程中遇到的问题" class="headerlink" title="hexo&amp;next主题安装过程中遇到的问题"></a>hexo&amp;next主题安装过程中遇到的问题</h2><ul>
+<li><strong>_config.yml的deploy如何写</strong>  </li>
+</ul>
+<pre><code class="yaml"><span class="attr">deploy:</span>
+  <span class="attr">type:</span> <span class="string">git</span>
+  <span class="attr">repository:</span> <span class="string">https://github.com/qqdsx/qqdsx.github.io</span>
+<span class="attr">theme:</span> <span class="string">next</span>  </code></pre>
+<ul>
+<li><strong>hexo使用git提交报错</strong><br> <code>npm install hexo-deployer-git --save</code></li>
+<li><strong>安装next主题后，输入命令</strong><code>hexo d</code>我的主页github.io并没显示next的主题。<br><code>hexo clean</code> 后删除.gitignore文件再<code>hexo d</code></li>
+<li><strong>在机器上有git并且与github配置好后，安装过程中使用到的命令</strong><br>按顺序依次是：<br>安装hexo<code>npm install -g hexo</code><br><code>mkdir ~/hexo</code>，进入<code>~/hexo</code>初始化hexo<code>hexo init</code><br>安装Next主题<code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code><br>验证是否成功，本地<code>hexo g</code>+<code>hexo s</code>,验证成功后上传github<code>hexo d</code></li>
+</ul>
+<h2 id="hexo下markdown标题不显示"><a href="#hexo下markdown标题不显示" class="headerlink" title="hexo下markdown标题不显示"></a>hexo下markdown标题不显示</h2><p>  一般是因为使用时的语法不严格，比如错误事例为<code>##标题</code>。正确语法是<code>## 标题</code>。（有点坑）</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/17/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -394,7 +526,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
